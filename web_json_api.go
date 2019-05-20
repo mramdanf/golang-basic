@@ -52,6 +52,7 @@ func user(w http.ResponseWriter, r *http.Request) {
 				}
 
 				w.Write(jsonData)
+				return
 			}
 		}
 
