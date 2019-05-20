@@ -11,9 +11,11 @@ type User struct {
 }
 
 func main() {
-	var user = User{"Ramdan", 24}
-
-	var jsonData, err = json.Marshal(user)
+	var users = [...]User{
+		{"Ramdan", 24},
+		{"Lisda Adistiani", 22},
+	}
+	var jsonData, err = json.Marshal(users)
 	if err != nil {
 		fmt.Println(err.Error())
 		return

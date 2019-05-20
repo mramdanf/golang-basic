@@ -18,6 +18,7 @@ func main() {
 	var err = json.Unmarshal(jsonData, &user)
 	if err != nil {
 		fmt.Println(err.Error())
+		return
 	}
 
 	fmt.Println("Fullname: ", user.FullName)
